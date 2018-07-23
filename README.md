@@ -4,5 +4,7 @@ the LaTeX code of the thesis and
 some other raw material that can maybe 
 help you, if you need to work with the ABB IRB 120 and it direct/inverse kinematics.
 
+Still in construction.
+
 
 Enjoy!
