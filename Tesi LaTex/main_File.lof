@@ -1,0 +1,68 @@
+\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
+\defcounter {refsection}{0}\relax 
+\select@language {italian}
+\defcounter {refsection}{0}\relax 
+\select@language {italian}
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Struttura fisica manipolatore ABB IRB120 \emph {(a)} e relativo modello matematico \emph {(b)}\relax }}{6}{figure.caption.4}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{6}{subfigure.1.1}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{6}{subfigure.1.2}
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Morfologia del manipolatore industriale in similitudine con la morfologia del braccio umano\relax }}{7}{figure.caption.5}
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Dimensioni fisiche espresse, in mm, dei bracci del manipolatore IRB 120\relax }}{8}{figure.caption.6}
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Range di lavoro \emph {(a)} e raggio di curvatura \emph {(b)}\relax }}{9}{figure.caption.7}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{9}{subfigure.4.1}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{9}{subfigure.4.2}
+\contentsline {figure}{\numberline {2.5}{\ignorespaces Cinematica diretta e inversa\cite {rep:Slide_Brugali1}\relax }}{9}{figure.caption.8}
+\contentsline {figure}{\numberline {2.6}{\ignorespaces Sistemi di riferimento esterni per la gestione della traiettoria del manipolatore\relax }}{10}{figure.caption.9}
+\contentsline {figure}{\numberline {2.7}{\ignorespaces Sistema di coordinate polso\relax }}{11}{figure.caption.10}
+\contentsline {figure}{\numberline {2.8}{\ignorespaces Tool Center Point\relax }}{12}{figure.caption.11}
+\contentsline {figure}{\numberline {2.9}{\ignorespaces Catena cinematica IRB 120\relax }}{12}{figure.caption.12}
+\contentsline {figure}{\numberline {2.10}{\ignorespaces Rotazione di una terna rispetto ad un'altra\relax }}{13}{figure.caption.14}
+\contentsline {figure}{\numberline {2.11}{\ignorespaces Semplice esempio di rotazione di sistemi di riferimento\relax }}{14}{figure.caption.15}
+\contentsline {figure}{\numberline {2.12}{\ignorespaces Rotazioni elementari\relax }}{15}{figure.caption.16}
+\contentsline {figure}{\numberline {2.13}{\ignorespaces Composizione di rotazioni in terna fissa e mobile \cite {book:RobotIndustriali}\relax }}{16}{figure.caption.18}
+\contentsline {figure}{\numberline {2.14}{\ignorespaces Esempio di catena cinematica aperta formata da \emph {n} bracci \cite {book:RobotIndustriali}\relax }}{17}{figure.caption.19}
+\contentsline {figure}{\numberline {2.15}{\ignorespaces Posizionamento sistemi di riferimento solidale per due bracci qualisiasi\relax }}{18}{figure.caption.21}
+\contentsline {figure}{\numberline {2.16}{\ignorespaces Rappresentazione dei parametri di Denavit-Hartenberg\relax }}{20}{figure.caption.23}
+\contentsline {figure}{\numberline {2.17}{\ignorespaces Soluzione cinematica diretta manipolatore ABB IRB 120\relax }}{21}{figure.caption.24}
+\contentsline {figure}{\numberline {2.18}{\ignorespaces Input problema cinematico inverso\relax }}{22}{figure.caption.25}
+\contentsline {figure}{\numberline {2.19}{\ignorespaces Coordinate del centro del polso del manipolatore\relax }}{23}{figure.caption.27}
+\contentsline {figure}{\numberline {2.20}{\ignorespaces Triangoli di supporto per il calcolo del angolo $\vartheta _2$\relax }}{24}{figure.caption.28}
+\contentsline {figure}{\numberline {2.21}{\ignorespaces Triangoli di supporto per il calcolo del angolo $\vartheta _3$\relax }}{26}{figure.caption.29}
+\contentsline {figure}{\numberline {2.22}{\ignorespaces Step iniziale per il calcolo algebrico dell'orientamento del polso\relax }}{27}{figure.caption.30}
+\contentsline {figure}{\numberline {2.23}{\ignorespaces Sistemi di riferimento dei giunti utilizzati per trovare l'orientamento del polso\relax }}{27}{figure.caption.31}
+\contentsline {figure}{\numberline {2.24}{\ignorespaces Caratteristiche della funzione $\atantwo $\relax }}{30}{figure.caption.35}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {3.1}{\ignorespaces IRC5 Compact controller\relax }}{31}{figure.caption.36}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Pulsanti e interruttori presenti sul pannello anteriore del controller IRC5\relax }}{33}{figure.caption.37}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Connettori presenti sul pannello anteriore del controller IRC5\relax }}{34}{figure.caption.38}
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Porte di comunicazione IRC5\relax }}{35}{figure.caption.39}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Componenti principali della Flex Pendant\relax }}{39}{figure.caption.40}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Schermata di controllo della movimentazione manuale tramite joystick\relax }}{40}{figure.caption.41}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Logo RobotStudio\relax }}{41}{figure.caption.42}
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Schema del funzionamento online del sistema di controllo automatico\relax }}{42}{figure.caption.43}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {6.1}{\ignorespaces Virtualizzazione del sistema fisico su piattaforma \emph {RobotStudio}\relax }}{43}{figure.caption.44}
+\contentsline {figure}{\numberline {6.2}{\ignorespaces Esemplificazione del livello di complessit\IeC {\`a} dei sistemi simulabili in \emph {RobotStudio}\relax }}{44}{figure.caption.45}
+\contentsline {figure}{\numberline {6.3}{\ignorespaces Schema base della struttura del programma \emph {RAPID}\relax }}{45}{figure.caption.46}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {7.1}{\ignorespaces Configurazione di una comunicazione OPC tra client e server\relax }}{48}{figure.caption.47}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {8.1}{\ignorespaces \emph {Robot Operating System}\relax }}{49}{figure.caption.48}
+\contentsline {figure}{\numberline {8.2}{\ignorespaces Struttura a componenti di ROS\relax }}{49}{figure.caption.49}
+\contentsline {figure}{\numberline {8.3}{\ignorespaces Concetti fondametali su cui si basa una "network" ROS\relax }}{50}{figure.caption.50}
+\contentsline {figure}{\numberline {8.4}{\ignorespaces Elementi principali dell'architettura ROS\relax }}{51}{figure.caption.51}
+\contentsline {figure}{\numberline {8.5}{\ignorespaces Comunicazione basata sul protocollo \emph {publisher-subscribers}\relax }}{52}{figure.caption.52}
+\contentsline {figure}{\numberline {8.6}{\ignorespaces Struttura architetturale di massima del sistema\relax }}{52}{figure.caption.53}
+\contentsline {figure}{\numberline {8.7}{\ignorespaces Architettura ad alto livello di ROS Industrial\relax }}{54}{figure.caption.54}
+\contentsline {figure}{\numberline {8.8}{\ignorespaces Schematizzazione della comunicazione socket tra client e server con relativo flusso di dati\relax }}{55}{figure.caption.55}
+\contentsline {figure}{\numberline {8.9}{\ignorespaces Configurazione schematica della comunicazione socket\relax }}{55}{figure.caption.56}
+\contentsline {figure}{\numberline {8.10}{\ignorespaces Struttura del messaggio scambiato tra client e server\relax }}{59}{figure.caption.57}
+\contentsline {figure}{\numberline {8.11}{\ignorespaces Funzionalit\IeC {\`a} del nodo joint\_trajectory\_action\relax }}{61}{figure.caption.58}
+\contentsline {figure}{\numberline {8.12}{\ignorespaces Grafo delle dipendenze tra topics e nodi\relax }}{63}{figure.caption.59}
+\contentsline {figure}{\numberline {8.13}{\ignorespaces Struttura multitasking del server ROS implementato in codice RAPID\relax }}{64}{figure.caption.60}
+\contentsline {figure}{\numberline {8.14}{\ignorespaces Configurazioni dei task del ROSserver\relax }}{64}{figure.caption.61}
+\addvspace {10\p@ }

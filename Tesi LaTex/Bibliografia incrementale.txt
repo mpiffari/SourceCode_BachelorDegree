@@ -1,0 +1,7 @@
+- Sito ufficiale ABB (nello specifico questa pagina riguardante IRB120 http://new.abb.com/products/robotics/industrial-robots/irb-120)
+- Arte Latex
+- Come scrivere la tesi con Latex
+- Tesi spagnolo : PUESTA EN MARCHA DE BRAZO
+ROBÓTICO Y DESARROLLO DE
+APLICACIONES
+Alumno: Axel José Córdoba López (TFG Cordoba)

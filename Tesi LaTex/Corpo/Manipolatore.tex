@@ -1,0 +1,92 @@
+%================= DOCUMENTO =========================================
+Il manipolatore ABB IRB 120 \emph{(Industrial Robot Base)} rappresenta una soluzione \emph{economica} e \emph{affidabile} per produzioni in grande quantità su linee di produzione automatizzate, con un investimento contenuto: si tratta perciò di una nuova frontiera di manipolatori industriali i quali, secondo la \emph{definizione \textsc{ISO}} \cite{ISO:normaRobot}, possono essere definiti come:
+\begin{quoting}
+
+\emph{"A robot is an automatically controlled, reprogrammable, multipurpose and manipulative machine with
+	several reprogrammable axes, which may be either fixed in place or mobile for use in
+	industrial automation applications"}
+\end{quoting}
+
+Il manipolatore industriale oggetto dello studio in questo progetto, come esplicitato precedentemente, è l'ABB IRB 120, il quale è il più piccolo robot industriale universale commercializzato da ABB (\emph{Asea Brown Boveri}), del peso di soli 25kg e con la possibilità di movimentare carichi fino a 3/4 kg per mezzo di uno sbraccio massimo di 580 \si{\milli\metre} \cite{ABB:Manul_irb120}.
+
+Queste caratteristiche rendono IRB 120 il manipolatore più facilmente integrabile presente sul mercato: progettato con una leggera struttura in alluminio, nella quale i potenti motori compatti assicurano un rapido movimento del robot (velocità di avanzamento lineare massima di 6000 \si{\milli\metre}/\si{\second}) con elevata accelerazione pur mantenendo precisione, di circa \emph{risoluzione \ang{0.01}} e agilità in qualsiasi applicazione e tipologia di movimento.
+ 
+\newpage
+\section{Morfologia}
+L'IRB 120 fa parte quindi della classe dei manipolatori industriali: dal punto di vista morfologico, esso presenta 6 gradi di libertà \emph{(numero di coordinate libere)}, ovvero la movimentazione del braccio stesso avviene per mezzo di 5 \emph{bracci (links)} collegati da 6 \emph{giunti (joints)}\label{text:joints} di tipo rotoidale come si può vedere in figura \vref{fig:IRB120img}.
+\begin{figure}[h]
+	\centering
+	\subfloat[]{\includegraphics[width=0.55\textwidth]{Immagini/IRB120}}\quad
+	\subfloat[]{\includegraphics[width=0.55\textwidth]{Immagini/IRB120_Model}}
+	\caption{Struttura fisica manipolatore ABB IRB120 \emph{(a)} e relativo modello matematico \emph{(b)}}
+	\label{fig:IRB120img}
+\end{figure}
+
+Entrando più nel dettaglio, si intuisce facilmente come l'IRB 120 faccia parte della categoria dei manipolatori industriali antropomorfi: le presenza di 6 giunti rotazionali va a creare una forte somiglianza con quello che è il braccio umano.
+\begin{figure}
+	\centering
+	\includegraphics[width=0.5\textwidth]{Immagini/BraccioUmano_IRB120}
+	\caption{Morfologia del manipolatore industriale in similitudine con la morfologia del braccio umano}
+	\label{fig:HumanArmIRB120}
+\end{figure}
+
+Ovviamente il braccio umano, il quale presenta \emph{7 \textsc{DOF} (Degrees Of Freedom)}, ha una mobilità maggiore dovuta alla sua ridondanza: infatti il corpo umano è dotato di 2 braccia coordinate con 7 \textsc{DOF} ciascuno con mani con 18 \textsc{DOF} e flessibilità, il tutto coordinato da visione \cite{DOF:HumanArm}.
+
+Nonostante ciò, 6 \textsc{dof} risultano essere sufficienti: infatti un corpo rigido nello spazio è univocamente determinato da 6 parametri, tre dei quali individuano la posizione \emph{(x,y,z)} e tre l'orientamento \emph{($\psi$,$\vartheta$,$\varphi$)}.
+
+Traslando questi concetti teorici sul nostro manipolatore IRB 120, la posizione può essere gestita tramite i primi tre giunti, mentre l'orientamento viene gestito tramite gli ultimi tre giunti della catena cinematica (capitolo~\vref{sec:Kinematics}).
+\section{Caratteristiche tecniche principali}
+Nell'analisi della movimentazione del manipolatore IRB 120, si è rivelato necessario andare ad analizzare alcune delle caratteristiche fisiche principali, studiandone i limiti principali unitamente alla flessibilità che esse offrono.
+\subsection{Intervalli di movimento}
+%Creo una tabella in testo
+\begin{center}
+\label{tab:movIRB120}
+\begin{tabular}{l|c|c}
+	\toprule
+	\textbf{Spostamento assi} & \textbf{Area di lavoro} & \textbf{Velocità massima} \\
+	\midrule
+	Asse 1 \emph{(Rotazione)} & $\ang{165}$ to $\ang{-165}$ & $\ang{250}/s$ \\
+	Asse 2 \emph{(Braccio)} & $\ang{110}$ to $\ang{-110}$ & $\ang{250}/s$ \\
+	Asse 3 \emph{(Braccio)} & $\ang{70}$ to $\ang{-90}$ & $\ang{250}/s$ \\
+	Asse 4 \emph{(Polso)} &	$\ang{160}$ to $\ang{-160}$ & $\ang{320}/s$ \\ 
+	Asse 5 \emph{(Brandeggio polso)} & $\ang{120}$ to $\ang{-120}$ & $\ang{320}/s$ \\
+	Asse 6 \emph{(Rotazione polso)} & $\ang{400}$ to $\ang{-400}$ & $\ang{420}/s$ \\
+	\bottomrule
+\end{tabular}
+\end{center}
+\newpage
+\subsection{Dimensioni fisiche}
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.5\textwidth]{Immagini/DimensioniManipolatore}
+	\caption{Dimensioni fisiche espresse, in mm, dei bracci del manipolatore IRB 120}
+	\label{fig:IRB120_Dimension}
+\end{figure}
+\subsection{Range di lavoro e raggio di curvatura}
+
+In base a quelle che sono le dimensioni fisiche del manipolatore (figura~\vref{fig:IRB120_Dimension}) e le massime angolazioni raggiungibili singolarmente da ognuno dei 6 joint, il TCP (\emph{Tool Center Point} - \vref{item:TCP}) può raggiungere le seguenti zone di lavoro:
+\begin{figure}[h]
+	\centering
+	\subfloat[]{\includegraphics[width=0.45\textwidth]{Immagini/RangediLavoro}}\quad
+	\subfloat[]{\includegraphics[width=0.45\textwidth]{Immagini/RaggiodiCurvatura}}
+	\caption{Range di lavoro \emph{(a)} e raggio di curvatura \emph{(b)}}
+	\label{fig:RangeFunzionamento}
+\end{figure}
+\subsection{Prestazioni}
+\begin{center}
+	\label{tab:prestazioniIRB120}
+	\begin{tabular}{c|c}
+		\toprule
+		& \textbf{IRB 120} \\
+		\midrule
+		\textbf{Ciclo con 1kg di carico} & \\
+		$25\times300\times25 \si{\milli\metre}$ & 0.58\si{\second} \\
+		$25\times300\times25 \si{\milli\metre}$ con riorientamento \ang{180} asse 6 & 0.92\si{\second} \\
+		Tempo di accelerazione$0-1\si{\metre}/\si{\second}$ & 0.07\si{\second} \\
+		\bottomrule
+	\end{tabular}
+\end{center}
+\section{La cinematica}
+\label{sec:Kinematics}
+\input{Corpo/Cinematica}
+%=====================================================================

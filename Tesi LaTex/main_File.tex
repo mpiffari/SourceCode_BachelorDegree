@@ -1,0 +1,159 @@
+%============= PREAMBOLO ==========================================
+
+\documentclass [11 pt, a4 paper, twoside, openright]{book}
+\usepackage[T1]{fontenc} % Codifica dei font
+% Questi pacchetti permettono di andare ad utilizzare il font Times: più pulito a mio 
+%parere il font originale di LaTeX
+%\usepackage{newtxtext}
+%\usepackage{newtxmath}
+\usepackage[utf8]{inputenc} % Lettere accentate da tastiera
+\usepackage[italian]{babel,varioref} % Lingua del documento
+\usepackage{pdfpages} % Package per inserire file pdf nell'ambiente tex
+%Permette di settare le proprietà dei riferimenti incrociati
+\usepackage{hyperref}
+\usepackage{emptypage}
+\hypersetup{hidelinks}
+\usepackage{fancyhdr}% Package per personalizzare le testatine
+\setlength{\headheight}{15.2pt}
+\pagestyle{fancy}{
+	\fancyfoot[LE,RO]{\thepage}}
+\fancyfoot{}
+\fancyhead{}
+\newcommand {\fncymain}{%
+	\fancyhead [LO]{{\footnotesize \MakeUppercase	\rightmark }}
+	\fancyfoot [LO]{\thepage }
+	\fancyhead [RE]{{\footnotesize \MakeUppercase	\leftmark }}
+	\fancyfoot [RE]{\thepage }
+	\renewcommand {\footrulewidth}{0.3 pt}}
+
+
+\usepackage{microtype}% Package che permette di gestire meglio il riempimento delle righe
+\usepackage{siunitx}% Package per lavorare con i simboli del SI
+\sisetup{output-decimal-marker={.}}
+\usepackage{textcomp}
+\usepackage[autostyle,italian=guillemets]{csquotes}% Package per produrre la bibliografia
+\usepackage[style=numeric,backend=biber]{biblatex}% Package per produrre la bibliografia
+\usepackage{booktabs}% Package per inserire tabelle
+\usepackage{caption}% Package per inserire tabelle
+\captionsetup{tableposition=top,figureposition=bottom,font=small,format=hang,labelfont={sf,bf}}% Settaggio della posizione delle didascalie 
+\usepackage{graphicx}% Package per inserire tabelle
+\usepackage{quoting}% Package per inserire citazioni in display
+\quotingsetup{font=small}
+\usepackage{subfig}% Package per poter creare immagini con più sottofigure
+\usepackage{mathtools}% Package per poter inserire apici a sinistra 	
+\usepackage{multirow}% Package per rendere differenti le tabelle
+\usepackage{longtable}
+\usepackage{listings}
+\lstset{tabsize=2}
+\usepackage{matlab-prettifier}
+%\usepackage{setspace}
+%\onehalfspacing
+
+%Package per la matematica
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+
+%Altri package
+\usepackage[italian]{varioref}
+\usepackage{guit}% Necessario per poter utilizzare il logo GuIT
+\usepackage {caption}% Per poter inserire la lista del codice
+\DeclareCaptionType{code}[Code Listing][Elenco del codice] 
+\usepackage{indentfirst}
+\usepackage[backend=biber]{biblatex}
+%\addbibresource{BibliografiaTesi.bib}% Import del database nel documento
+\bibliography{BibliografiaTesi.bib}
+
+%Definizione di comandi
+\renewcommand{\vec}{\boldsymbol}% Utile per poter utilizzare velocemente la notazione corsiva/grassetto per i vettori.
+
+%\newcommand {\fncyfront}{%
+%	\fancyhead [RO]{{\footnotesize \rightmark }}
+%	\fancyfoot [RO]{\thepage }
+%	\fancyhead [LE]{\footnotesize {\leftmark }}
+%	\fancyfoot [LE]{\thepage }
+%	\fancyhead [RE, LO] {}
+%	\fancyfoot [RE]{}
+%	\renewcommand {\footrulewidth}{0.3 pt}}
+
+
+% Comandi per utilizzare le lettere greche (maniera più semplice)
+\renewcommand{\epsilon}{\varepsilon}
+\renewcommand{\theta}{\vartheta}
+\renewcommand{\rho}{\varrho}
+\renewcommand{\phi}{\varphi}
+
+\makeatletter
+\g@addto@macro\appendix{\renewcommand{\thesection}{\Alph{section}}
+	\renewcommand{\thesubsection}{\thesection.\arabic{subsection}}}
+\makeatother 
+
+\DeclareMathOperator{\atantwo}{atan_2}
+
+\makeatletter
+\DeclareRobustCommand{\atan}{%
+	\operatorname{atan}%
+	\@ifnextchar2{_}{}%
+}
+\makeatother
+
+\addto\captionsitalian{%
+	\renewcommand{\lstlistlistingname}{Elenco del codice}%
+	\renewcommand{\lstlistingname}{Codice}%
+}
+
+
+%==================================================================
+
+%============= DOCUMENTO ==========================================
+
+\begin{document}
+	%====================================================================
+	\rule[-1pt]{5cm}{0.4pt} %Per gestire la parte estetica dell'underscore
+	%\fncyfront 
+	\frontmatter
+	%\includepdf[pages={1},pagecommand={\thispagestyle{empty}}]{fronteingegnerialt.pdf}
+	%\input{Inizio/Colophon}% Includo un .tex esterno
+	%\cleardoublepage
+	\thispagestyle{empty}
+	\begin {flushright}
+		\null \vspace {\stretch {1}}
+			\emph{"The more we do, the more we can do; the more busy we are, the more leisure we have"}\\William Hazlitt
+		\vspace {\stretch {2}}\null
+	\end {flushright}
+	\tableofcontents
+	\listoffigures
+	\lstlistoflistings
+	%====================================================================
+	\fncymain 
+	\mainmatter
+	\chapter{Introduzione}
+	\input{Corpo/Introduzione}
+	\label{chapter:introduction}
+	\part{Il sistema}
+	\label{part:Il_sistema}
+	\chapter{Il manipolatore IRB 120}
+	\input{Corpo/Manipolatore}
+	\chapter{Il controllore IRC5 Compact}
+	\label{chapter:IRC5}
+	
+	\input{Corpo/Controller}
+	\part{Il controllo del sistema}
+	\label{part:Il_controllo}
+	\chapter{Movimentazione manuale}
+	\input{Corpo/Mov_Manuale}
+	\label{chapter:FlexPendant}
+	\chapter{Movimentazione automatica}
+	\input{Corpo/Mov_Automatica}
+	\chapter{Estensioni future}
+	Lo studio condotto in questa sede ha permesso di andare a fornire il \emph{know-how} necessario per poter avviare progetti di ricerca riguardanti questa tipologia di manipolatori: nello specifico siamo riusciti ad avere un quadro più completo di quelle che possono essere le possibili tecniche di gestione e controllo del movimento.
+	Sicuramente, con il tempo avuto a disposizione, ci siamo trovati di fronte a prendere delle scelte: il compito dunque di questo percorso è stato proprio quello di andare ad aprire la strada per lavori/progetti futuri. 
+	Nello specifico, è stato sempre tenuto presente che, il primissimo step futuro da eseguire, sarà quello di andare a creare una movimentazione autonoma del robot, per mezzo dell'utilizzo di  sensori visuali, quali telecamere, webcam oppure sensori visuali 3D.
+	Contemporaneamente all'introduzione di una gestione autonoma del manipolatore, bisognerà andare a valutare le informazioni fornite come feedback dalla cinematica inversa: sarà infatti necessario andare a discriminare le soluzioni valide da quelle che invece non sono in grado di andare a rispettare vincoli di tipo fisico. Questo potrebbe essere possibile grazie all'utilizzo di nuovi algoritmi di controllo, unitamente ad una stesura di codice completamente orientato verso l'ambiente Matlab.
+	%====================================================================
+	\backmatter
+	\nocite{*}
+	\printbibliography
+\end{document}
+
+%==================================================================

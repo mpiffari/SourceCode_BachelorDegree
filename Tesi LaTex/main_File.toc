@@ -1,0 +1,49 @@
+\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
+\defcounter {refsection}{0}\relax 
+\select@language {italian}
+\defcounter {refsection}{0}\relax 
+\select@language {italian}
+\contentsline {chapter}{\numberline {1}Introduzione}{1}{chapter.1}
+\contentsline {part}{I\hspace {1em}Il sistema}{3}{part.1}
+\contentsline {chapter}{\numberline {2}Il manipolatore IRB 120}{5}{chapter.2}
+\contentsline {section}{\numberline {2.1}Morfologia}{6}{section.2.1}
+\contentsline {section}{\numberline {2.2}Caratteristiche tecniche principali}{7}{section.2.2}
+\contentsline {subsection}{\numberline {2.2.1}Intervalli di movimento}{7}{subsection.2.2.1}
+\contentsline {subsection}{\numberline {2.2.2}Dimensioni fisiche}{8}{subsection.2.2.2}
+\contentsline {subsection}{\numberline {2.2.3}Range di lavoro e raggio di curvatura}{8}{subsection.2.2.3}
+\contentsline {subsection}{\numberline {2.2.4}Prestazioni}{8}{subsection.2.2.4}
+\contentsline {section}{\numberline {2.3}La cinematica}{8}{section.2.3}
+\contentsline {subsection}{\numberline {2.3.1}Sistemi di coordinate}{9}{subsection.2.3.1}
+\contentsline {subsection}{\numberline {2.3.2}Descrizione di posizione e orientamento di un sistema di riferimento}{11}{subsection.2.3.2}
+\contentsline {subsubsection}{Rotazioni elementari}{13}{section*.13}
+\contentsline {subsubsection}{Composizione delle matrici di rotazione: rotazioni complesse}{15}{section*.17}
+\contentsline {subsection}{\numberline {2.3.3}Cinematica diretta IRB 120}{17}{subsection.2.3.3}
+\contentsline {subsubsection}{Metodo di Denavit-Hartenberg}{17}{section*.20}
+\contentsline {subsection}{\numberline {2.3.4}Cinematica inversa IRB 120}{22}{subsection.2.3.4}
+\contentsline {subsection}{\numberline {2.3.5}Posizione dell'end-effector: definizione variabili di giunto $\vartheta _1 - \vartheta _2 - \vartheta _3$}{23}{subsection.2.3.5}
+\contentsline {subsection}{\numberline {2.3.6}Orientamento dell'end-effector: definizione variabili di giunto $\vartheta _4 - \vartheta _5 - \vartheta _6$}{26}{subsection.2.3.6}
+\contentsline {subsubsection}{Quaternioni}{29}{section*.32}
+\contentsline {subsubsection}{La funzione atan2}{30}{section*.34}
+\contentsline {chapter}{\numberline {3}Il controllore IRC5 Compact}{31}{chapter.3}
+\contentsline {section}{\numberline {3.1}Pannello di controllo}{32}{section.3.1}
+\contentsline {subsection}{\numberline {3.1.1}Pulsanti e interruttori}{32}{subsection.3.1.1}
+\contentsline {subsection}{\numberline {3.1.2}Interfacce di collegamento}{33}{subsection.3.1.2}
+\contentsline {subsection}{\numberline {3.1.3}Morsettiera di suppporto}{36}{subsection.3.1.3}
+\contentsline {part}{II\hspace {1em}Il controllo del sistema}{37}{part.2}
+\contentsline {chapter}{\numberline {4}Movimentazione manuale}{39}{chapter.4}
+\contentsline {chapter}{\numberline {5}Movimentazione automatica}{41}{chapter.5}
+\contentsline {chapter}{\numberline {6}RobotStudio: programmazione statica}{43}{chapter.6}
+\contentsline {chapter}{\numberline {7}Programmazione dinamica: case study}{47}{chapter.7}
+\contentsline {chapter}{\numberline {8}ROS: \emph {Robot Operating System}}{49}{chapter.8}
+\contentsline {section}{\numberline {8.1}ROS industrial e IRB 120}{53}{section.8.1}
+\contentsline {section}{\numberline {8.2}Comunicazione socket: concetti base}{54}{section.8.2}
+\contentsline {section}{\numberline {8.3}Messaggio custom scambiato tramite socket}{57}{section.8.3}
+\contentsline {section}{\numberline {8.4}Client part}{60}{section.8.4}
+\contentsline {section}{\numberline {8.5}Architettura ABB ROS Server}{63}{section.8.5}
+\contentsline {section}{\numberline {8.6}Server part}{65}{section.8.6}
+\contentsline {subsection}{\numberline {8.6.1}ROS\_MotionServer}{65}{subsection.8.6.1}
+\contentsline {subsection}{\numberline {8.6.2}ROS\_StateServer}{66}{subsection.8.6.2}
+\contentsline {subsection}{\numberline {8.6.3}ROS\_Motion: effettiva movimentazione del manipolatore}{67}{subsection.8.6.3}
+\contentsline {subsection}{\numberline {8.6.4}ROS\_Socket: apertura della connessione socket lato server}{68}{subsection.8.6.4}
+\contentsline {subsection}{\numberline {8.6.5}ROS\_messages}{70}{subsection.8.6.5}
+\contentsline {chapter}{\numberline {9}Estensioni future}{73}{chapter.9}

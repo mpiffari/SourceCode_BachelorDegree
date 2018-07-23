@@ -1,0 +1,39 @@
+\BOOKMARK [0][-]{chapter.1}{Introduzione}{}% 1
+\BOOKMARK [-1][-]{part.1}{I Il sistema}{}% 2
+\BOOKMARK [0][-]{chapter.2}{Il manipolatore IRB 120}{part.1}% 3
+\BOOKMARK [1][-]{section.2.1}{Morfologia}{chapter.2}% 4
+\BOOKMARK [1][-]{section.2.2}{Caratteristiche tecniche principali}{chapter.2}% 5
+\BOOKMARK [2][-]{subsection.2.2.1}{Intervalli di movimento}{section.2.2}% 6
+\BOOKMARK [2][-]{subsection.2.2.2}{Dimensioni fisiche}{section.2.2}% 7
+\BOOKMARK [2][-]{subsection.2.2.3}{Range di lavoro e raggio di curvatura}{section.2.2}% 8
+\BOOKMARK [2][-]{subsection.2.2.4}{Prestazioni}{section.2.2}% 9
+\BOOKMARK [1][-]{section.2.3}{La cinematica}{chapter.2}% 10
+\BOOKMARK [2][-]{subsection.2.3.1}{Sistemi di coordinate}{section.2.3}% 11
+\BOOKMARK [2][-]{subsection.2.3.2}{Descrizione di posizione e orientamento di un sistema di riferimento}{section.2.3}% 12
+\BOOKMARK [2][-]{subsection.2.3.3}{Cinematica diretta IRB 120}{section.2.3}% 13
+\BOOKMARK [2][-]{subsection.2.3.4}{Cinematica inversa IRB 120}{section.2.3}% 14
+\BOOKMARK [2][-]{subsection.2.3.5}{Posizione dell'end-effector: definizione variabili di giunto 1 - 2 - 3}{section.2.3}% 15
+\BOOKMARK [2][-]{subsection.2.3.6}{Orientamento dell'end-effector: definizione variabili di giunto 4 - 5 - 6}{section.2.3}% 16
+\BOOKMARK [0][-]{chapter.3}{Il controllore IRC5 Compact}{part.1}% 17
+\BOOKMARK [1][-]{section.3.1}{Pannello di controllo}{chapter.3}% 18
+\BOOKMARK [2][-]{subsection.3.1.1}{Pulsanti e interruttori}{section.3.1}% 19
+\BOOKMARK [2][-]{subsection.3.1.2}{Interfacce di collegamento}{section.3.1}% 20
+\BOOKMARK [2][-]{subsection.3.1.3}{Morsettiera di suppporto}{section.3.1}% 21
+\BOOKMARK [-1][-]{part.2}{II Il controllo del sistema}{}% 22
+\BOOKMARK [0][-]{chapter.4}{Movimentazione manuale}{part.2}% 23
+\BOOKMARK [0][-]{chapter.5}{Movimentazione automatica}{part.2}% 24
+\BOOKMARK [0][-]{chapter.6}{RobotStudio: programmazione statica}{part.2}% 25
+\BOOKMARK [0][-]{chapter.7}{Programmazione dinamica: case study}{part.2}% 26
+\BOOKMARK [0][-]{chapter.8}{ROS: Robot Operating System}{part.2}% 27
+\BOOKMARK [1][-]{section.8.1}{ROS industrial e IRB 120}{chapter.8}% 28
+\BOOKMARK [1][-]{section.8.2}{Comunicazione socket: concetti base}{chapter.8}% 29
+\BOOKMARK [1][-]{section.8.3}{Messaggio custom scambiato tramite socket}{chapter.8}% 30
+\BOOKMARK [1][-]{section.8.4}{Client part}{chapter.8}% 31
+\BOOKMARK [1][-]{section.8.5}{Architettura ABB ROS Server}{chapter.8}% 32
+\BOOKMARK [1][-]{section.8.6}{Server part}{chapter.8}% 33
+\BOOKMARK [2][-]{subsection.8.6.1}{ROS\137MotionServer}{section.8.6}% 34
+\BOOKMARK [2][-]{subsection.8.6.2}{ROS\137StateServer}{section.8.6}% 35
+\BOOKMARK [2][-]{subsection.8.6.3}{ROS\137Motion: effettiva movimentazione del manipolatore}{section.8.6}% 36
+\BOOKMARK [2][-]{subsection.8.6.4}{ROS\137Socket: apertura della connessione socket lato server}{section.8.6}% 37
+\BOOKMARK [2][-]{subsection.8.6.5}{ROS\137messages}{section.8.6}% 38
+\BOOKMARK [0][-]{chapter.9}{Estensioni future}{part.2}% 39
